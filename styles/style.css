@@ -1,3 +1,15 @@
+/*
+Fuentes del proyecto:
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Wix Madefor Text', sans-serif;
+
+  colores:
+    #ff0000 ---> rojo
+
+  medidas:
+    1rem = 16px
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -354,55 +366,37 @@ footer h3{
   color: #fff;
 }
 
-/* Media queries*/
+/* medias queries */
 
-@media only screen and (max-width: 1535px){
-  header{
-    padding: 15px 3%;
-    transition: 200ms;
-  }
-  .icons__hero{
-    padding: 0 3%;
-    transition: 200ms;
-  }
-  .scroll__down{
-    right: 3%;
-    transition: 200ms;
-  }
-}
 
-@media only screen and (max-width: 1460px){
-  section{
-    padding: 0 12%;
-    transition: 200ms;
-  }
-}
+@media screen and (max-width: 1225px) {
 
-@media only screen and (max-width: 1340px){
-  .hero__image img{
-    width: 100%;
-    height: auto;
-  }
-  .hero__txt h1{
-    font-size: 75px;
-    margin-right: 120px;
-  }
-  .hero__txt h5{
-    margin-bottom: 25px;
-  }  
-  .hero__txt p{
-    margin-right: 100px;
-  }
-}
-
-@media only screen and (max-width: 1195px){
   section{
     padding: 0 3%;
     transition: 200ms;
   }
   .hero__txt{
     padding-top: 115px;
+    margin-top: 75px;
   }
+
+  .hero__txt h4{
+    color: #000;
+  }
+
+  .hero__txt h1{
+    font-size: 100px;
+  }
+
+  .hero__txt h5{
+    color: #000;
+  }
+
+  .hero__txt p {
+    color: black;
+    font-weight: 500;
+  }
+
   .hero__image{
     text-align: center;
   }
@@ -410,65 +404,83 @@ footer h3{
     width: 560px;
     height: auto;
   }
+
   .hero{
     height: 100%;
     gap: 1rem;
     grid-template-columns: 1fr;
   }
+
   .icons__hero{
     display: none;
   }
+
   .scroll__down{
     display: none;
   }
 }
 
-@media only screen and (max-width: 990px){
-  #menu-icon{
-    display: block;
-  }
-  .nav__list{
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    width: 200px;
-    height: 25vh;
-    background: #ac7c39;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-    transition: 400ms all ease;
-  }
-  .nav__list a {
-    margin-left: 0;
-    color: #ffffff;
-    display: block;
-    margin: 7px 0
-  }
-
-  .nav__list a:hover{
-    color: #000;
-  }
-
-  .nav__list.open {
-    right: 0;
-  }
-}
-
-@media only screen and (max-width: 680px){
-  .hero__image img {
-    width: 100%;
-    height: auto;
-  }
+@media screen and (max-width: 950px) {
   .products ul{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
+
   .products li{
     margin: 5px 0;
-    width: 80%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  section{
+    padding: 0 2%;
+  }
+  #menu-icon{
+    display: block;
+    color: #000;
+  }
+  .nav__list{
+    position: absolute;
+    top: 70%;
+    right: -100%;
+    width: 200px;
+    height: 25vh;
+    background: #ac7c39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: 300ms all ease;
+  }
+
+  .nav__list a{
+    margin-left: 0;
+    color: #ffffff;
+    display: block;
+    margin: 7px 0;
+  }
+
+  .nav__list.open{
+    right: 0;
+  }
+
+  .hero__txt h1{
+    font-size: 70px;
+    margin-right: 15px;
+  }
+  .hero__txt h5{
+    font-size: 19px;
+  }
+  .hero__txt h4{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .hero__txt p{
+    font-size: 1s0px;
+    margin-right: 30px;
   }
 }

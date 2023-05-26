@@ -1,7 +1,7 @@
-const menu = document.getElementById("menu-icon")
-const navList = document.querySelector(".nav__list")
+const menuIcon = document.getElementById("menu-icon");
+const navList = document.querySelector(".nav__list");
 
-menu.onclick = () => {
-    menu.classList.toggle("bx-x")
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x")
     navList.classList.toggle("open")
 }
